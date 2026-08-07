@@ -33,4 +33,6 @@ selection_sort(arr, size)
 
 print(f"The Array after selection sort: {arr}")
 
+print("Largest Element in Array: ", arr[size-1])
+
 
