@@ -1,127 +1,63 @@
 # Python DSA Problems Collection 🐍
 
-A comprehensive collection of Data Structures and Algorithms implementations in Python. This repository contains fundamental sorting and searching algorithms with clear, educational implementations.
+Educational collection of Data Structures & Algorithms implemented in Python. The repository focuses on clear, minimal examples intended for learning and quick experimentation.
 
-## 📚 Table of Contents
+**Highlights:**
+- Small, self-contained scripts you can run directly with Python
+- Focus on readability and beginner-friendly input/output
 
-- [Sorting Algorithms](#sorting-algorithms)
-- [Searching Algorithms](#searching-algorithms)
-- [How to Run](#how-to-run)
-- [Algorithm Complexity](#algorithm-complexity)
+## Repository Structure
 
-## 🔄 Sorting Algorithms
+- `Array/` — Array utilities and search problems (e.g., `first_occurence.py`, `last_occurence.py`, `MaxBySort.py`)
+- `Basic-Maths/` — Math utilities and number problems (e.g., `gcd.py`, `is_prime.py`, `fibonacci.py`)
+- `Linked-List/` — Linked list examples and demos
+- `Patterns/` — ASCII and pattern printing exercises
+- `Recursion/` — Recursive examples and practice
+- `SortingAndSearchingOfArray/` — Classic sorting and searching algorithms (`bubble_sort.py`, `insertion_sort.py`, `bin_search.py`)
 
-### 1. Bubble Sort
-**File:** [bubble_sort.py](bubble_sort.py)
+## Quick Start
 
-Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.
+Prerequisite: Python 3.7+
 
-- **Time Complexity:** O(n²)
-- **Space Complexity:** O(1)
-- **Best for:** Small datasets, educational purposes
-
-### 2. Insertion Sort
-**File:** [insertion_sort.py](insertion_sort.py)
-
-Insertion Sort builds the final sorted array one item at a time by inserting each element into its correct position.
-
-- **Time Complexity:** O(n²)
-- **Space Complexity:** O(1)
-- **Best for:** Small datasets, nearly sorted data
-
-### 3. Selection Sort
-**File:** [selection_sort.py](selection_sort.py)
-
-Selection Sort divides the input into sorted and unsorted regions, and repeatedly selects the smallest element from the unsorted region.
-
-- **Time Complexity:** O(n²)
-- **Space Complexity:** O(1)
-- **Best for:** Small datasets, minimizing memory writes
-
-## 🔍 Searching Algorithms
-
-### 1. Linear Search
-**File:** [lin_search.py](lin_search.py)
-
-Linear Search sequentially checks each element in the list until a match is found or the whole list has been searched.
-
-- **Time Complexity:** O(n)
-- **Space Complexity:** O(1)
-- **Best for:** Unsorted data, small datasets
-
-### 2. Binary Search
-**File:** [bin_search.py](bin_search.py)
-
-Binary Search is an efficient algorithm for finding an item in a sorted list by repeatedly dividing the search interval in half.
-
-- **Time Complexity:** O(log n)
-- **Space Complexity:** O(1)
-- **Best for:** Sorted data, large datasets
-
-### 3. First Occurrence (Recursive)
-**File:** [first_occurence.py](first_occurence.py)
-
-Recursive implementation to find the first occurrence of a value in an array.
-
-- **Time Complexity:** O(n)
-- **Space Complexity:** O(n) - recursive stack
-- **Approach:** Recursion
-
-### 4. Last Occurrence (Recursive)
-**File:** [last_occurence.py](last_occurence.py)
-
-Recursive implementation to find the last occurrence of a value in an array by searching from the end.
-
-- **Time Complexity:** O(n)
-- **Space Complexity:** O(n) - recursive stack
-- **Approach:** Recursion
-
-## 🚀 How to Run
-
-Each file is a standalone Python script with interactive input. To run any algorithm:
+To run any example, open a terminal in the repository root and run:
 
 ```bash
-python <filename>.py
+python <relative-path-to-file>.py
 ```
 
-**Example:**
+Examples:
+
 ```bash
-python bubble_sort.py
+python SortingAndSearchingOfArray/bubble_sort.py
+python Array/first_occurence.py
+python Basic-Maths/gcd.py
 ```
 
-Follow the prompts to:
-1. Enter the array size
-2. Input array elements
-3. View the results
+Most scripts prompt for input (array length, elements, target values). Inspect the top of a file to see expected input format.
 
-## 📊 Algorithm Complexity
+## Conventions
 
-| Algorithm | Best Case | Average Case | Worst Case | Space |
-|-----------|-----------|--------------|------------|-------|
-| **Bubble Sort** | O(n) | O(n²) | O(n²) | O(1) |
-| **Insertion Sort** | O(n) | O(n²) | O(n²) | O(1) |
-| **Selection Sort** | O(n²) | O(n²) | O(n²) | O(1) |
-| **Linear Search** | O(1) | O(n) | O(n) | O(1) |
-| **Binary Search** | O(1) | O(log n) | O(log n) | O(1) |
+- Scripts aim to be simple and interactive for demonstration purposes.
+- Filenames use snake_case and describe the contained algorithm/problem.
 
-## 📝 Notes
+## Contribution
 
-- All sorting implementations are **in-place** algorithms
-- Binary search requires a **sorted array** to function correctly
-- Recursive search implementations demonstrate functional programming concepts
-- Each file includes interactive input for hands-on learning
+Feel free to open issues or submit pull requests. Useful contributions:
 
-## 🎯 Future Enhancements
+- Add well-documented implementations (e.g., Merge Sort, Quick Sort)
+- Include unit tests or small example drivers
+- Improve README examples and input prompts
 
-Potential additions to this collection:
-- Merge Sort
-- Quick Sort
-- Heap Sort
-- Depth First Search (DFS)
-- Breadth First Search (BFS)
-- Tree and Graph implementations
+If you want, I can:
+
+- Add unit tests using `unittest` or `pytest`
+- Add a small runner script to demonstrate algorithms programmatically
+
+## License
+
+This collection is open for learning and modification — add a LICENSE file if you want an explicit license.
 
 ---
 
-**Author:** Niraj  
-**Last Updated:** December 29, 2025
+**Author:** Niraj
+**Last Updated:** 2026-08-07
