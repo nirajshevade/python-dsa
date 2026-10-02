@@ -12,3 +12,5 @@ print(sorted(arr2))
 print(f"Sum: {sum(arr)} | Max: {max(arr)} | Min: {min(arr)} | Length: {len(arr)}")
 
 print(all(arr))
+
+
